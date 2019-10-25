@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>LOGO</td>
+            <td><h1>Delhi Public School</h1></td>
+        </tr>
+        <tr>
+            <td>
+                <a href="/Student/ShowAllStudents">Show All Students</a><br />
+                <a href="/Student/Create">Enroll Students</a><br />
+                <a href="/Student/Edit">Update Student Record</a><br />
+                <a href="/Student/Delete">Delete Students</a><br />
+            </td>
+            <td>@RenderBody()</td>
+        </tr>
+    </table>   
+</body>
+</html>

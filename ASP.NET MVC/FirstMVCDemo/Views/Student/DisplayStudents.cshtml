@@ -1,0 +1,18 @@
+﻿@using FirstMVCDemo.Models;
+@{
+    ViewBag.Title = "DisplayStudents";
+}
+
+<h2>DisplayStudents</h2>
+<marquee>@ViewBag.Title</marquee>
+<table>
+    @foreach (var item in ViewData["Student"] as List<Student>)
+    {
+    <tr>
+        <td><b>@item.RollNo</b></td>
+        <td><b>@item.Name</b></td>
+        <td><b>@item.Address</b></td>
+    </tr>
+    }
+</table>
+

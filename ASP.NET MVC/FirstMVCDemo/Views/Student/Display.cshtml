@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "Display";
+}
+
+<h2>Display</h2>
+<marquee>@ViewBag.Title</marquee>
+<table>
+    @foreach (var item in ViewData["Student"] as List<string>)
+    {
+        <tr>
+            <td>
+                <b>@item</b>
+            </td>
+        </tr>
+    }
+</table>
